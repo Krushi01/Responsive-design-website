@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Food Website</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+<div class="header-1">
+<a href="#" class="logo"> <i class="fas fa-utensils"></i> food </a>
+<h3 class="call"> <i class="fas fa-phone"></i> call now : +123-123-1230 </h3>
+</div>
+<div class="header-2">
+<div id="menu" class="fas fa-hamburger"></div>
+  <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#dish">dishes</a></li>
+            <li><a href="#speciality">speciality</a></li>
+            <li><a href="#order">order</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+
+</header>
+
+<section class="home" id="home">
+
+<div class="content">
+    <h1>welcome <span>food</span> lovers</h1>
+    <p>We offer a highly seasonal and continuously evolving tasty menu experience.</p>
+    <a href="#"><button class="btn">get started</button></a>
+</div>
+
+<div class="shape"></div>
+
+</section>
+<section class="about" id="about">
+<h1 class="heading"> <span> about us </span> </h1>
+<div class="row">
+
+    <div class="content">
+        <h3>lets satisfy your hunger with our tasty dishes</h3>
+        <p>We pamper our guest with a fine dine experience .We offer an exclusive and a large variety of food for the connoisseurs.
+            Experience the finest most extravagant and sumptuous menu and in addition the most delectable all delicious menu,the spread is endless. </p>
+        <p>It blends all the robust flavours,rigth from indian taditions to the delectable flavours with a great experience with unmatched cozy interiors.</p>
+        <a href="#"><button class="btn">learn more</button></a>
+    </div>
+
+    <div class="image">
+        <img src="images/girl-chef.png" alt="">
+    </div>
+
+</div>
+
+</section>
+
+
+<section class="dish" id="dish">
+
+<h1 class="heading"> <span> popular dishes </span> </h1>
+
+<ul class="controls">
+    <li class="buttons button-active" data-filter="all">all</li>
+    <li class="buttons" data-filter="sandwich">sandwich</li>
+    <li class="buttons" data-filter="cake">cake</li>
+    <li class="buttons" data-filter="juice">juice</li>
+    <li class="buttons" data-filter="chocolate">chocolate</li>
+</ul>
+
+<div class="image-container">
+
+    <div class="image sandwich">
+        <img src="images/sandwich1.jpg" alt="">
+        <a href="#">sandwich</a>
+    </div>
+    <div class="image sandwich">
+        <img src="images/sandwich2.jpg" alt="">
+        <a href="#">sandwich</a>
+    </div>
+    <div class="image sandwich">
+        <img src="images/sandwich3.jpg" alt="">
+        <a href="#">sandwich</a>
+    </div>
+
+    <div class="image cake">
+        <img src="images/cake1.jpg" alt="">
+        <a href="#">cake</a>
+    </div>
+    <div class="image cake">
+        <img src="images/cake2.jpg" alt="">
+        <a href="#">cake</a>
+    </div>
+    <div class="image cake">
+        <img src="images/cake3.jpg" alt="">
+        <a href="#">cake</a>
+    </div>
+
+    <div class="image juice">
+        <img src="images/juice1.jpg" alt="">
+        <a href="#">juice</a>
+    </div>
+    <div class="image juice">
+        <img src="images/juice2.jpg" alt="">
+        <a href="#">juice</a>
+    </div>
+
+    <div class="image chocolate">
+        <img src="images/chocolate.jpg" alt="">
+        <a href="#">chocolate</a>
+    </div>
+
+</div>
+
+</section>
+</section>
+<section class="speciality" id="speciality">
+<h1 class="heading"> <span> our speciality </span> </h1>
+<div class="box-container">
+    <div class="box">
+        <img src="images/img1.jpg" alt="">
+        <div class="info">
+            <h3>tasty hamburger</h3>
+            <p>upto 25% discount</p>
+            <a href="#"><button class="btn"> check out </button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/img2.jpg" alt="">
+        <div class="info">
+            <h3>fresh bearkfast</h3>
+            <p>upto 25% discount</p>
+            <a href="#"><button class="btn"> check out </button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/img3.jpg" alt="">
+        <div class="info">
+            <h3>veg sandwich</h3>
+            <p>upto 25% discount</p>
+            <a href="#"><button class="btn"> check out </button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/img4.jpg" alt="">
+        <div class="info">
+            <h3>delicious pizza</h3>
+            <p>upto 25% discount</p>
+            <a href="#"><button class="btn"> check out </button></a>
+        </div>
+    </div>
+
+</div>
+
+<div class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <h3>fast delivery</h3>
+        
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-tags"></i>
+        <h3>heavy discounts</h3>
+        
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-hand-holding-usd"></i>
+        <h3>money returns</h3>
+        
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <h3>24 x 7 support</h3>
+        
+    </div>
+
+</div>
+
+</section>
+<section class="order" id="order">
+<h1 class="heading"> <span> order now </span> </h1>
+<div class="row">
+    <div class="column">
+      <img src="/images/order-bg.jpg" style="width:100%">
+    </div>
+    <div class="column">
+<form action="">
+
+    <div class="inputBox">
+        <input type="text" placeholder="full name">
+        <input type="text" placeholder="food name">
+    </div>
+
+    <div class="inputBox">
+        <input type="number" placeholder="phone number">
+        <select name="" id="">
+            <option value="food type" disabled selected>food type</option>
+            <option value="veg">veg</option>
+            <option value="non-veg">non-veg</option>
+        </select>
+    </div>
+    <div class="inputBox">
+        <input type="textarea" placeholder="Type your address" style="height:200px"></textarea>
+    </div> 
+
+    </div>
+<input type="submit" value="order now" class="btn">
+</form>
+</section>
+<section class="newsletter">
+
+    <h1>newsletter</h1>
+    <p>subscribe for latest updates</p>    
+    <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" value="subscribe">
+    </form>
+
+</section>
+<section class="footer">
+    <img src="images/shape-top.png" alt="">
+      <div class="box-container">
+
+        <div class="box">
+            <h3 class="heading"> <span>why choose us?</span> </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iste unde reprehenderit vitae consequatur incidunt totam aperiam culpa. Repellat, fugiat?</p>
+        </div>
+
+        <div class="box">
+            <h3 class="heading"> <span>locations</span> </h3>
+            <a href="#">Mumbai</a>
+            <a href="#">Delhi</a>
+            <a href="#">Punjab</a>
+            
+        </div>
+
+        <div class="box">
+            <h3 class="heading"> <span>quick links</span> </h3>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#dishes">dishes</a>
+        
+            <a href="#speciality">speciality</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3 class="heading"> <span>contact us</span> </h3>
+            <p> <i class="fas fa-map-marker-alt"></i> mumbai, india 400104 </p>
+            <p> <i class="fas fa-envelope"></i> xyx@gmail.com </p>
+            <p> <i class="fas fa-globe"></i> www.website.com </p>
+        </div>
+
+    </div>
+
+    <footer>&copy; Copyright © Violet technologies 2021.</footer>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
